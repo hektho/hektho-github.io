@@ -1,0 +1,80 @@
+.inicio-background {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg, #e28f8f, #0c2f52, #000d1b);
+    background-size: 700% 500%;
+    animation: colors 25s ease infinite;
+  }
+  
+  @keyframes colors {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+.greetings {
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: white 1px solid;
+    animation: blinkCursor 1s infinite normal, textAnimation 5s steps(40) normal;
+}
+
+.botao {
+    visibility: hidden;
+    color: transparent;
+    animation: buttonAnimation 3s 5s normal, buttonEnable 3s 6s normal;
+    animation-fill-mode: forwards;
+    transition: all 1s ease;
+}
+
+.botao:hover {
+    transform: scale(1.1, 1.1);
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: white;
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes textAnimation {
+    from {
+        width: 0;
+    }
+    to {
+        width: 595px;
+    }
+}
+
+@keyframes buttonAnimation {
+    from {
+        margin-top: 320px;
+    }
+    to {
+        margin-top: 100px;
+    }
+}
+
+@keyframes buttonEnable {
+    from {
+        color: transparent;
+        visibility: hidden;
+    }
+    to {
+        color: white;
+        visibility: visible;
+    }
+}
