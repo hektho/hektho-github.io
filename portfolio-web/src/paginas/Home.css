@@ -1,0 +1,21 @@
+.home-container {
+    background-color: #0f0e17;
+    /* background-image: url('../imagens/aurora-boreal.jpg');
+    background-color: #cccccc;
+    background-position: center;
+    background-size: cover;
+    filter: brightness(90%);
+    animation: lightAni 10s normal infinite; */
+}
+
+/*@keyframes lightAni {
+    0% {
+        filter: brightness(90%);
+    }
+    50% {
+        filter: brightness(150%);
+    }
+    100% {
+        filter: brightness(90%);
+    }
+} */

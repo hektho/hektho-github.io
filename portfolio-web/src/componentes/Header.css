@@ -1,27 +1,32 @@
 .header {
     position: relative;
-    top: -40px;
+    top: -60px;
     animation: headerUp 1.5s ease-out;
     animation-fill-mode: forwards;
+    background-color: #1e1b2c;
 }
 
+/* .ul-container {
+    border-bottom: 1px solid rgb(0, 255, 170);
+    width: 90%;
+    background-color: white;
+} */
 @keyframes headerUp {
     from {
-        top: -40px;
+        top: -60px;
     }
     to {
-        top: 0;
+        top: 20px;
     }
 }
 
-li {
-    width: 15%;
-    background-color: transparent;
+.lista {
+    width: 16%;
     position: relative;
-    color: rgb(17, 17, 17);
+    color: #fff;
     white-space: nowrap;
     padding: 20px;
-    border-left: 2px solid rgba(26, 26, 26, 0.795);
+    border-left: 1px solid #fff;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
@@ -29,11 +34,34 @@ li {
     text-align: center;
     transition: 1s;
     cursor: pointer;
+
     
 }
-li:hover {
-    transform: scale(1.2, 1.2);
+
+.lista:hover {
+    /* animation: liHover 40s linear infinite;
+    animation-fill-mode: forwards; */
+    height: 120%;
+    width: 19%;
+    border-color: transparent;
+    box-shadow: -10px 0 0  rgba(192, 192, 192, 0.548);
+    z-index: 1;
+    /* background-image: url('../imagens/aurora-boreal.jpg');
+    background-position: 0%;
+    background-repeat: repeat; */
 }
+
+/* @keyframes liHover {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: 50% 0%;
+    } 
+} */
 /* li::before {
     width: 0%;
     height: 100%;
@@ -48,3 +76,6 @@ li:hover::before {
     height: 0%;
 } */
 
+.icone {
+    filter: invert(100%);
+}
