@@ -5,31 +5,34 @@ import skillsIcon from './icones/habilidades.png';
 import projectsIcon from './icones/projeto.png';
 import contactIcon from './icones/contato-telefonico.png';
 import aboutMeIcon from './icones/sobre-mim.png';
-function Header() {
+import { Link } from "react-router-dom";
+
+function Header({ history }) {
+  
   return (
-    <header className=" header bg-sky-300 max-h-18 items-center" >
-      <nav className="flex items-center w-full text-sky-50">
-        <ul className="flex flex-row w-screen items-center justify-center font-mono text-lg font-semibold">
-          <li>
-            <img src={ homeIcon } alt='ícone da página home' width='30px' height='20px'/>
+    <header className=" header max-h-18 items-center" >
+      <nav className="flex items-center justify-center w-full text-sky-50">
+        <ul className="flex flex-row w-screen items-center justify-center font-mono text-lg font-semibold ul-container">
+          <Link to='/home' className="border-none lista">
+            <img src={ homeIcon } class='icone' alt='ícone da página home' width='30px' height='20px'/>
             Home
-          </li>
-          <li>
-            <img src={ aboutMeIcon } alt='ícone da página home' width='30px' height='20px'/>
+          </Link>
+          <Link to='/sobre-mim' className='lista'>
+            <img src={ aboutMeIcon } class='icone' alt='ícone da página home' width='30px' height='20px'/>
             Sobre mim
-          </li>
-          <li>
-            <img src={ projectsIcon } alt='ícone da página home' width='30px' height='20px'/>
+          </Link>
+          <Link to='/projetos' className='lista'>
+            <img src={ projectsIcon } class='icone' alt='ícone da página home' width='30px' height='20px'/>
             Projetos
-          </li>
-          <li>
-            <img src={ skillsIcon } alt='ícone da página home' width='30px' height='20px'/>
+          </Link>
+          <Link to='habilidades' className='lista'>
+            <img src={ skillsIcon } class='icone' alt='ícone da página home' width='30px' height='20px'/>
             <span>Habilidades</span>
-          </li>
-          <li>
-            <img src={ contactIcon } alt='ícone da página home' width='30px' height='20px'/>
+          </Link>
+          <Link to='contatos' className='lista'>
+            <img src={ contactIcon } class='icone' alt='ícone da página home' width='30px' height='20px'/>
             Contato
-          </li>
+          </Link>
         </ul>
       </nav>
     </header>
