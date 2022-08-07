@@ -1,0 +1,50 @@
+.header {
+    position: relative;
+    top: -40px;
+    animation: headerUp 1.5s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes headerUp {
+    from {
+        top: -40px;
+    }
+    to {
+        top: 0;
+    }
+}
+
+li {
+    width: 15%;
+    background-color: transparent;
+    position: relative;
+    color: rgb(17, 17, 17);
+    white-space: nowrap;
+    padding: 20px;
+    border-left: 2px solid rgba(26, 26, 26, 0.795);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    transition: 1s;
+    cursor: pointer;
+    
+}
+li:hover {
+    transform: scale(1.2, 1.2);
+}
+/* li::before {
+    width: 0%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.329);
+    transition: 0.5s;
+}
+
+li:hover::before {
+    width: 100%;
+    height: 0%;
+} */
+
