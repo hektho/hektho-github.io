@@ -1,8 +1,6 @@
 .inicio-background {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(45deg, #e28f8f, #0c2f52, #000d1b);
-    background-size: 700% 500%;
     animation: colors 25s ease infinite;
   }
   
@@ -22,10 +20,12 @@
 
 
 .greetings {
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.075);
     position: absolute;
     white-space: nowrap;
     overflow: hidden;
-    border-right: white 1px solid;
+    border-right: white 2px solid;
     animation: blinkCursor 1s infinite normal, textAnimation 5s steps(40) normal;
 }
 

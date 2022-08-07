@@ -1,26 +1,33 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import './Header.css';
+import homeIcon from './icones/casa.png';
+import skillsIcon from './icones/habilidades.png';
+import projectsIcon from './icones/projeto.png';
+import contactIcon from './icones/contato-telefonico.png';
+import aboutMeIcon from './icones/sobre-mim.png';
 function Header() {
   return (
-    <header className="p-4 bg-gradient-to-r from-indigo-500" >
-      <nav className="flex justify-between items-center w-full text-sky-50">
-        <h1 className="flex w-3/6 justify-center text-4xl font-medium">
-          Heitor da Costa 
-        </h1>
-        <ul className="flex flex-row w-3/4 justify-around p-3 font-mono text-lg font-semibold">
+    <header className=" header bg-sky-300 max-h-18 items-center" >
+      <nav className="flex items-center w-full text-sky-50">
+        <ul className="flex flex-row w-screen items-center justify-center font-mono text-lg font-semibold">
           <li>
+            <img src={ homeIcon } alt='ícone da página home' width='30px' height='20px'/>
             Home
           </li>
           <li>
+            <img src={ aboutMeIcon } alt='ícone da página home' width='30px' height='20px'/>
             Sobre mim
           </li>
           <li>
+            <img src={ projectsIcon } alt='ícone da página home' width='30px' height='20px'/>
             Projetos
           </li>
           <li>
-            Habilidades
+            <img src={ skillsIcon } alt='ícone da página home' width='30px' height='20px'/>
+            <span>Habilidades</span>
           </li>
           <li>
+            <img src={ contactIcon } alt='ícone da página home' width='30px' height='20px'/>
             Contato
           </li>
         </ul>
