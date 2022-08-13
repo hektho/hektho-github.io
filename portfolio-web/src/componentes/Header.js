@@ -1,10 +1,10 @@
 import React from "react";
 import './Header.css';
-import homeIcon from './icones/casa.png';
-import skillsIcon from './icones/habilidades.png';
-import projectsIcon from './icones/projeto.png';
-import contactIcon from './icones/contato-telefonico.png';
-import aboutMeIcon from './icones/sobre-mim.png';
+import homeIcon from '../icones/casa.png';
+import skillsIcon from '../icones/habilidades.png';
+import projectsIcon from '../icones/projeto.png';
+import contactIcon from '../icones/contato-telefonico.png';
+import aboutMeIcon from '../icones/sobre-mim.png';
 import { Link } from "react-router-dom";
 
 function Header({ history }) {

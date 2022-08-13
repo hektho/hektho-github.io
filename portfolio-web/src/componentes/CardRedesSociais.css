@@ -1,0 +1,29 @@
+.card-container {
+    width: 20%;
+    height: 35%;
+    transition: 2s;
+    background-color: white;
+    box-shadow: 2px 2px 5px black;
+    cursor: pointer;
+}
+
+.card-container:hover {
+    width: 22%;
+    height: 40%;
+    box-shadow: 4px 4px 10px  rgba(0, 0, 0, 0.514);
+}
+
+img:hover + .rede-social-nome {
+    height: 20%;
+}
+
+.rede-social-nome {
+    height: 0%;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.span {
+    text-align: center;
+    margin-top: 10px;
+}
