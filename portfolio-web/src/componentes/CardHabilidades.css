@@ -1,0 +1,9 @@
+.container-card-hability {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 10px;
+}

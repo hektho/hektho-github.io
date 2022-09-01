@@ -5,7 +5,7 @@ import Inicio from "./paginas/Inicio";
 import Home from './paginas/Home';
 import SobreMim from './paginas/SobreMim';
 import Projetos from "./paginas/Projetos";
-import Habilidades from "./paginas/Habilidades";
+import Habilidades from "./componentes/Habilidades";
 import Contatos from "./paginas/Contatos";
 
 function App(props) {
