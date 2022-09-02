@@ -4,7 +4,6 @@ import Header from './Header'
 import './Habilidades.css';
 
 export default function Habilidades() {
-
 	const stacks = [
 		{url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg',	name: 'CSS3'},
 		{url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg', 	name: 'JavaScript'},
@@ -15,7 +14,8 @@ export default function Habilidades() {
 		{url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg', name: 'Redux'},
 		{url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg', name: 'NodeJS'},
 		{url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg', name:'MySQL'}
-	]
+	];
+	
 	return (
 		<div className='main-container'>
 			<Header />
