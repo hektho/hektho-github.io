@@ -30,7 +30,7 @@ export default function Inicio(props) {
         Olá, meu nome é Heitor da Costa!
       </h1>
       <button 
-        onClick={ () => history.push('/home') }
+        onClick={ () => history.push('/sobre-mim') }
         type="button" 
         className="p-2 text-2xl text-white mt-80 botao"
       >
