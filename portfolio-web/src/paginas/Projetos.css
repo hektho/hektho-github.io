@@ -2,6 +2,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 75vh;
+    flex-wrap: wrap;
+    margin-top: auto;
+    margin: auto;
+    width: 90vw;
+    margin-top: 50px;
+    border: 1px solid black;
 }
+
