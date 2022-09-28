@@ -20,6 +20,7 @@
 
 
 .greetings {
+    width: 710px;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.075);
     position: absolute;
@@ -54,9 +55,6 @@
     from {
         width: 0;
     }
-    to {
-        width: 710px;
-    }
 }
 
 @keyframes buttonAnimation {
@@ -76,5 +74,33 @@
     to {
         color: white;
         visibility: visible;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .greetings {
+        font-size: 20px;
+        width: 400px;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.075);
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: rgb(255, 255, 255) 2px solid;
+        animation: blinkCursor 1s infinite normal, textAnimation 5s steps(40) normal;
+    }
+}
+
+@media screen and (max-width: 422px) {
+    .greetings {
+        font-size: 12px;
+        width: 250px;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.075);
+        text-align: center;
+        white-space: nowrap;
+        overflow: clip;
+        border-right: rgb(255, 255, 255) 2px solid;
+        animation: blinkCursor 1s infinite normal, textAnimation 5s steps(40) normal;
     }
 }
