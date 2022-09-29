@@ -20,6 +20,7 @@
 
 
 .greetings {
+    text-align: center;
     width: 710px;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.075);
@@ -74,20 +75,6 @@
     to {
         color: white;
         visibility: visible;
-    }
-}
-
-@media screen and (min-width: 1300px) {
-    .greetings {
-        width: 710px;
-        border-radius: 5px;
-        background-color: rgba(0, 0, 0, 0.075);
-        text-align: center;
-        position: absolute;
-        white-space: nowrap;
-        overflow: hidden;
-        border-right: rgb(255, 255, 255) 2px solid;
-        animation: blinkCursor 1s infinite normal, textAnimation 5s steps(40) normal;
     }
 }
 
