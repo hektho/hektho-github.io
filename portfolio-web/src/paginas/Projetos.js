@@ -4,6 +4,7 @@ import FrontendImage from '../imagens/frontend-online-store-image.png';
 import TryunfoImage from '../imagens/tryunfo-image.png';
 import CardProjetos from "./cardProjetos";
 import TrybeWalletImage from '../imagens/imagem-trybewallet.png';
+import TriviaGame from '../imagens/trivia-game.png';
 
 import './Projetos.css';
 
@@ -36,6 +37,15 @@ export default function Projetos() {
         github: 'https://github.com/hektho/TrybeWallet'
       }
     },
+    {
+      url: 'https://trivia-project-hektho.vercel.app/',
+      name: 'Trivia Game',
+      img: TriviaGame,
+      detalhes: {
+        descricao: 'Um jogo de perguntas e respostas. ',
+        github: 'https://github.com/hektho/Trivia',
+      },
+    }
   ];
 
   return (
