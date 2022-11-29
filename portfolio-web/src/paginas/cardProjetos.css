@@ -11,12 +11,6 @@
 .img-card {
     border-radius: 10px;
     border-bottom: 1px solid black;
-    
-}
-
-.main-card-projetos:hover {
-    width: 500px;
-    height: 420px;
 }
 
 .description-card {
